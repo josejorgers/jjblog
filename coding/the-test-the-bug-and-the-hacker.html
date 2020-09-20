@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post - JJ Blog</title>
+    <meta name="description" content="My thoughts about Computer Science and related topics">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="../index.html">JJ's Blog</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="../posts.html">RECENT POSTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../about.html">About ME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">CONTACT</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: url(&quot;../assets/img/david-travis-WC6MJ0kRzGw-unsplash[1].jpg&quot;) center / cover no-repeat;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="post-heading">
+                        <h1>The test, the bug, and the hacker</h1>
+                        <h2 class="subheading">The necessity of testing</h2><span class="meta">Posted&nbsp;on September 20, 2020</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <p>Certain developer is creating the login page of a random website. When he finishes the work he proceeds to make a login attempt in his brand new page. There are things that don't work properly but he is able to fix them quickly. And
+                        finally, all users can enter with their accounts. Let's move this ticket to the Done board.</p>
+                    <p>Once the project was finished it turned out that people couldn't log in with their accounts! Our developer was both stunned and sad at the same time. Luckily this was just a school project and wasn't a bank management software.</p>
+                    <p>Have you experimented such situations? I certainly have. At some point in the development process he made some changes in the database structure, those changes made the login logic to fail. But he was logged in the page already and
+                        didn't remember to retest the login page. It was a hard to find error. Damn!&nbsp;</p>
+                    <p>Does that mean that we are bad at making software? Yes, in a way.</p>
+                    <h2 class="section-heading">Bugs are part of the game</h2>
+                    <p>Yes, coding that way is certainly wrong. But is not the error itself what was wrong. We are all humans, we make mistakes in every of our activities and coding is not an exception. Bugs are part of the game.&nbsp;&nbsp;</p>
+                    <p>What we need to do is to be prepared to detect that error as soon as possible. We cannot avoid bugs, but we can make a lot of things instead of just login once or twice in order to detect bugs.</p><small>Hope at this point you are motivated enough to keep reading about how to get rid of bugs. But maybe you need to know some examples and figures of how harmful bugs can be. I recommend you to take a look at this&nbsp;</small>
+                    <a
+                        href="https://www.softwaretestingnews.co.uk/the-real-cost-of-software-bugs/">page</a>
+                        <p></p>
+                        <p></p>
+                        <h2 class="section-heading">We need to test!</h2>
+                        <p>There will be bugs in the code we'll write tomorrow. Why not take care about the "pesticide" today? So, start the project that will test your actual project right now!</p>
+                        <p>There are several ways testing can be carried on, and there are several kind of tests as well. This post is not about the characteristics of each type of test. Instead I want to make a shallow introduction about the necessity of
+                            test and the right way to test.</p>
+                        <p>Companies that are large enough have entire departments of Quality Assurance (QA) for the software they produce. Testing projects are comparable with the actual product in both length and resources consumption. So yes, you maybe
+                            will need to code a lot for the sole purpose of "capture" your bugs. But it worth every second and line of code when you are working on a complex enough project.</p>
+                        <p>A bug is harmful only if it finds its way to the released product. The cost of fixing a bug decreases dramatically when it is discovered in an early stage.</p>
+                        <p>Although testing can reduce cost a lot, it seems kind of expensive as well. Yes, I know it is order of magnitude less expensive. But how to make it cheaper? What is the right way to go?</p>
+                        <h2 class="section-heading">The way of testing</h2>
+                        <p>The first and most important thing to take into account is that&nbsp;<strong>testing can detect the presence of bugs but not their absence.</strong>&nbsp; So you need to focus your testing on finding bugs, instead of trying to
+                            prove the correctness of the software.</p>
+                        <p>In order to be relatively easy to test, your project should be built according with good practices and principles. Actually testing is an effective way to find the best architecture and pattern designs. Yeah, you should test even
+                            in the earliest stages of the project! Your software should be divided in several modules that fulfill very specific requirements, and we need to be able to test those modules either in isolation or interacting with each other.</p>
+                        <p>We need to automatize as much as we can. And the scripts that contains tests should be light enough to be run lot of times with nearly no cost. Every task that is carried on by humans is prone to errors and is (at least in this
+                            context) more expensive. But it might happen that our software would require some test that can't be automated or that would be more expensive if we automatize it, due to the necessity of constant maintenance that it would
+                            need, among other possible issues.</p>
+                        <p>But then... Don't we need a test to find bugs on the test itself?</p>
+                        <h2 class="section-heading">The snake won't eat its tail</h2>
+                        <p>Testing is not bug free. You can certainly introduce some bugs when coding an automated test. Then it seems natural to think about a test that tests the test. But then we'll need a test that tests the test that tests the test.
+                            And off course we can come up with the idea that testing is a fruitless effort since it tries to capture some bugs while introducing some others.</p>
+                        <p>Don't worry. I don't like to do fruitless work either, and making this post would be so if that last idea was true.&nbsp;</p>
+                        <p>I just want to mention another important requirement that every automated test should fulfill:<strong>&nbsp;it needs to be simple.</strong>&nbsp;</p>
+                        <p>Every complex logic needs to be out of the test and, potentially, be tested by a short, readable and simple piece of code</p>
+                        <p>Thus, test will always be almost error free. Readability is an important feature as well since it allows to find any possible bug introduced in the test very quickly.</p>
+                        <h2 class="section-heading">Conclusions</h2>
+                        <p>This post is an overview of testing as a necessity in the software development. I approached the subject as an effective way to discover errors during the software construction, which is dramatically cheaper than discovering them
+                            when the harm is done. But testing is more than that, it is the most effective way to build good quality software. It should be present in every stage of the development and even be in charge of every stage. Testing is the
+                            heart of the software quality assurance.</p>
+                        <p>As important as testing is testing in the right way. So you need your test to be simple, short and readable. That last feature is an important one! Not just because the reason mentioned above but because a test suite can represent
+                            the requirements of your product. Yes, you can "define" your product by testing it, but just if that definition can be easily read.&nbsp;&nbsp;</p>
+                        <p>This post is far from being a deep guide for testing or a treaty about every single aspect of testing. My sole purpose is to motivate you to learn about testing. I hope this requirement was fulfilled. In order to check that you
+                            can follow me on Twitter or send me a short, simple and readable message in the contact page.</p>
+                        <p></p>
+                        <p></p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
+                        <li class="list-inline-item"></li>
+                        <li class="list-inline-item"></li>
+                    </ul>
+                    <p class="text-muted copyright">Copyright&nbsp;©&nbsp;JJ Blog 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>
