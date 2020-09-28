@@ -2,7 +2,7 @@
 
 Trade offs are present in all our activities. Maybe you have heard the so called "No free lunch theorem" in Machine Learning. The theorem states that there is no silver bullet when it comes to machine learning models, but in fact, there is never a silver bullet when it comes to anything. And that is not a computer science principle but an economics principle.
 
-If you have written code for more than one month is almost sure you have experienced the necessity of trade offs when programming or at least have heard about it. Sometimes you sacrifices performance in the name of security, security in the name of scalability, beauty and readability in the name of performance, and so on. Don't forget you also sacrifices parties and fun in general on the name of programming so make it's worth it.
+If you have written code for more than one month is almost sure you have experienced the necessity of trade offs when programming or at least have heard about it. Sometimes you sacrifices performance in the name of security, security in the name of scalability, beauty and readability in the name of performance, and so on. Don't forget you also sacrifice parties and fun in general on the name of programming so make it worth it.
 
 In the specific case of algorithms, the main resources are time and memory, so the trade offs always involve those resources. It's common to find several solutions for the same problem because one of them is faster, but the other one is cheaper when it comes to storage. Off course there are other factors like implementation, simplicity, and security. In this post I'm going to write about combining several solutions to get the one that fulfill our requirements.
 
@@ -24,7 +24,7 @@ The problem is to find all prime numbers from 0 (zero) to N. The kind of problem
 
 In the naive algorithm, we iterate over all numbers ```x``` from 2 to N. Then we check whether ```x``` has any divisor besides itself and one. For the last step we can check for every number ```d``` between 2 and ```x - 1``` whether it is a divisor or not.
 
-There is room for improvement in the last step because we only need to check the divisors that are less than or equal to the square root of x. A pseudocde of the algorithm is written below
+There is room for improvement in the last step because we only need to check the divisors that are less than or equal to the square root of x. A pseudocode of the algorithm is written below
 
 ```
    primes(N):
