@@ -79,7 +79,7 @@ Dijkstra combined those ideas by analyzing a number at a time but taking advanta
 
 If we are analyzing number 6, then we have stored primes 2, 3 and 5, along with their least-not-analyzed-multiples that are: 6 for 2, also 6 for 3, and 10 for 5.
 
-Then, when analyzing a new number we take the smallest multiple stored until that moment and if that multiple is greater than the new number, then we have found a new prime, otherwise we have a composed number and we need to update the multiples of the stored primes that have the new number as its least multiple.
+Then, when analyzing a new number we take the smallest multiple stored until that moment and if that multiple is greater than the new number, then we have found a new prime, otherwise we have a composite number and we need to update the multiples of the stored primes that have the new number as its least multiple.
 
 We begin storing the prime number ```2``` with the least multiple ```4``` as well. Then when analyzing ```3``` we find that ```4 > 3``` so ```3``` is prime. We store ```3``` along with its smallest multiple that has not been analyzed yet (```6```). When analyzing ```4``` we find that ```4``` is stored as a multiple of ```2```, then we update the multiple of ```2``` that now will be ```6```. When analyzing ```5``` we find that ```6 > 5``` so ```5``` is a prime number and we store it along with ```10```, and so on... The code is presented below.
 
