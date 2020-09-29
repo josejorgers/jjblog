@@ -4,7 +4,7 @@ Certain developer is creating the login page of a random website. When he finish
 
 Once the project was finished it turned out that people couldn't log in with their accounts! Our developer was both stunned and sad at the same time. Luckily this was just a school project and wasn't a bank management software.
 
-Have you experimented such situations? I certainly have. At some point in the development process he made some changes in the database structure, those changes made the login logic to fail. But he was logged in the page already and didn't remember to retest the login page. It was a hard to find error. Damn! 
+Have you experienced such situations? I certainly have. At some point in the development process he made some changes in the database structure, those changes made the login logic to fail. But he was logged in the page already and didn't remember to retest the login page. It was a hard to find error. Damn! 
 
 Does that mean that we are bad at making software? Yes, in a way.
 
@@ -20,7 +20,7 @@ What we need to do is to be prepared to detect that error as soon as possible. W
 
 There will be bugs in the code we'll write tomorrow. Why not take care about the "pesticide" today? So, start the project that will test your actual project right now!
 
-There are several ways testing can be carried on, and there are several kind of tests as well. This post is not about the characteristics of each type of test. Instead I want to make a shallow introduction about the necessity of test and the right way to test.
+There are several ways testing can be carried on, and there are several kinds of tests as well. This post is not about the characteristics of each type of test. Instead I want to make a shallow introduction about the necessity of testing and the right way to test.
 
 Companies that are large enough have entire departments of Quality Assurance (QA) for the software they produce. Testing projects are comparable with the actual product in both length and resources consumption. So yes, you maybe will need to code a lot for the sole purpose of "capturing" your bugs. But it's worth every second and line of code when you are working on a complex enough project.
 
