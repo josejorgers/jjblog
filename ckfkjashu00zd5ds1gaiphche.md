@@ -40,7 +40,7 @@ But then... Don't we need a test to find bugs on the test itself?
 
 ## The snake won't eat its tail
 
-Testing is not bug free. You can certainly introduce some bugs when coding an automated test. Then it seems natural to think about a test that tests the test. But then we'll need a test that tests the test that tests the test. And off course we can come up with the idea that testing is a fruitless effort since it tries to capture some bugs while introducing some others.
+Testing is not bug free. You can certainly introduce some bugs when coding an automated test. Then it seems natural to think about a test that tests the test. But then we'll need a test that tests the test that tests the test. And of course we can come up with the idea that testing is a fruitless effort since it tries to capture some bugs while introducing some others.
 
 Don't worry. I don't like to do fruitless work either, and making this post would be so if that last idea was true. 
 
