@@ -25,7 +25,7 @@ They decided to build a website using React. I learned React while doing the pro
 
 >CRA is a very useful way to get started with your React project. With just typing ```npx create-react-app <project-name>``` you get the whole project scafolding. I think every React developer can take advantage from this tool no matter if you are novice or senior. I won't complain about CRA, but I think some tutorials should warn us about the possible drawbacks resulting from using it.
 
-Then the boss learned what a Progessive Web App (PWA) is, and after a couple of weeks we were required to make the site progressive. This is not a big deal since CRA provides us with a service worker.
+Then the boss learned what a Progressive Web App (PWA) is, and after a couple of weeks we were required to make the site progressive. This is not a big deal since CRA provides us with a service worker.
 
 >PWA is a mechanism to make websites working offline and to behave like native apps in mobile devices, among other benefits. This is achieved with the colaboration of several components like the browser, a special script called service worker, a manifest file, and some code to install the service worker in the browser. As I said, CRA provides us with the required components in order we can make our React site progressive.
 
