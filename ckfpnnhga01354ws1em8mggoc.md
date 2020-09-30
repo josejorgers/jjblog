@@ -1,6 +1,6 @@
 ## My first year as a developer
 
-It has been a year since I started to make money from building software. I don't call myself a developer, maybe one year making a living from programming is very similar to your definition of what developer is, but I don't see the things in that way. However this could be the subject of another post. Here I will write about some of my first year experiences.
+It has been a year since I started to make money from building software. I don't call myself a developer, maybe one year making a living from programming is very similar to your definition of what a developer is, but I don't see the things in that way. However this could be the subject of another post. Here I will write about some of my first year experiences.
 
 >I'll include some side notes like this one. I'll use these notes to briefly introduce some concepts and tools for those who are starting their programming journey right now.
 
