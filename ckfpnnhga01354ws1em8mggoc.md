@@ -31,7 +31,7 @@ Then the boss learned what a Progressive Web App (PWA) is, and after a couple of
 
 Once you have a service worker in your site, you are able to receive push notifications from a server, and of course, after two weeks we were required to implement this too. But to make that possible you need to make some adjustments in the service worker and guess what, the CRA service worker is not customizable at all!
 
->Maybe you have encounter some sites that ask you whether you'd like to receive notifications. If you answer yes, they can send you the so called push notifications with the content they like. This notifications pop up in your device no matter that you have the browser closed. This is possible because the browser keeps the service worker script running in the background.
+>Maybe you have encountered some sites that ask you whether you'd like to receive notifications. If you answer yes, they can send you the so called push notifications with the content they like. This notifications pop up in your device no matter that you have the browser closed. This is possible because the browser keeps the service worker script running in the background.
 
 Then I had to build a new service worker from scratch and the code to install it. That is not a big deal because I had have to do it no matter I had used CRA or not. So let's move to other issues.
 
@@ -45,7 +45,7 @@ My first task in this company, before the React website I have written about abo
 
 ## What I would do
 
-The problem here is not the changing. There are always unstable scenarios, business that are unstable by nature, or at least that becomes unstable due to new events. The problem is the rush in the decision making, the lack of connection between developers and the business men and the misconception by some of those business men that the cost of developing is negligible.
+The problem here is not the changing. There are always unstable scenarios, businesses that are unstable by nature, or at least that become unstable due to new events. The problem is the rush in the decision making, the lack of connection between developers and the business men and the misconception by some of those business men that the cost of developing is negligible.
 
 I think you just learn about good programming practices when you find yourself repeating the same code everywhere and fixing the same bug in diferent places. Well, with this experience I have learned the necessity of planning and writing. You need to define your problem and to write down that definition. You need to keep a record of your requirements, and even keep a record of the infrastructure you need in order to fulfill those requirements.  I don't like to overthink, but it's just a lack of common sense thinking that you can get something by just hitting the keys when the project is complex enough.
 
