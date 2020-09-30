@@ -57,4 +57,4 @@ Those have been some of my experiences in this firs year as a developer. I'll ce
 
 I hope you or your boss don't be suffering the WIPCA syndrome (Why Isn't Paul Coding Anything?!). So always try to write your problem definition, the requirements and everything you think is necessary, like the infrastructure. No matter if you are using Scrum, Waterfall or whatever. Just write a little bit and try to make changes, which will always be needed, less painful. Of course this only apply to complex enough projects, but don't underestimate projects, actually a way to assert whether a project is complex enough is defining the problem and the requirements.
 
-I you liked this post hit the thumb up. Feel free to comment whatever you want. You can also follow me on Twitter for debates about Computer Science.
+If you liked this post hit the like button. Feel free to comment whatever you want. You can also follow me on Twitter for debates about Computer Science.
