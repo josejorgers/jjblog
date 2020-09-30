@@ -1,6 +1,6 @@
 ## My first year as a developer
 
-It have been a year since I started to make money from building software. I don't call myself a developer, maybe one year making a living from programming is very similar to your definition of what developer is, but I don't see the things in that way. However this could be the subject of another post. Here I will write about some of my first year experiences.
+It has been a year since I started to make money from building software. I don't call myself a developer, maybe one year making a living from programming is very similar to your definition of what developer is, but I don't see the things in that way. However this could be the subject of another post. Here I will write about some of my first year experiences.
 
 >I'll include some side notes like this one. I'll use these notes to briefly introduce some concepts and tools for those who are starting their programming journey right now.
 
@@ -39,7 +39,7 @@ After building the whole payment process, they decided that we needed to use som
 
 The SDK was a vanilla Javascript file that needed to be imported via HTML script tag. It is intended to be integrated in applications that use vanilla javascript. You know, the non-NodeJS one. So I needed to make the impossible to get everything working without making ```eject```. After knowing about webpack, I'd like to go back in time and start my project from scratch, without using CRA or anything and taking care of my own webpack configuration. Belive me, this is just a single example because I don't want to make the story so long, I just want to make my point.
 
->Webpack is a tool that allows us to translate our NodeJS code into a vanilla javascript bundle that can be used in our production site. It's hard to master it and that's why tools like CRA manage all the webpack related issues for you. But I haven't found a smooth enough way to make changes in the CRA webpack configurations, so I think that if you are facing the sort of complexities I am telling you about, you should consider using some more flexible tool (and then tell me what tool is that) or doing your own webpack configurations. CRA allows you to run ```npm eject``` and after that, you are by your own with webpack and everuthing, but I am not brave enough yet.
+>Webpack is a tool that allows us to translate our NodeJS code into a vanilla javascript bundle that can be used in our production site. It's hard to master it and that's why tools like CRA manage all the webpack related issues for you. But I haven't found a smooth enough way to make changes in the CRA webpack configurations, so I think that if you are facing the sort of complexities I am telling you about, you should consider using some more flexible tool (and then tell me what tool is that) or doing your own webpack configurations. CRA allows you to run ```npm eject``` and after that, you are by your own with webpack and everything, but I am not brave enough yet.
 
 My first task in this company, before the React website I have written about above, was to build a responsive website. After a lot of effort and passing through all sort of dificulties, the site have never been used. Yes, I got paid, but this post is not about making money, this post is about what I think is wrong.
 
