@@ -6,7 +6,7 @@ It has been a year since I started to make money from building software. I don't
 
 ## Rigidness is not that bad
 
-When it comes to choose a framework or a library there is often a lot of discussion. At some point in my evolution as a programmer I thought that flexibility is always good. After a bunch of lines of code I learned that rigidness is not that bad.
+When it comes to choosing a framework or a library there is often a lot of discussion. At some point in my evolution as a programmer I thought that flexibility is always good. After a bunch of lines of code I learned that rigidness is not that bad.
 
 Frameworks, libraries, and tools in general are here because we are bad programmers by nature (among other causes). I really appretiate when a tool forces me to make things in a unique specific and very good way, so I can acomplish my goals by following that way.
 
