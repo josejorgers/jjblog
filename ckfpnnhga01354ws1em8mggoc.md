@@ -8,7 +8,7 @@ It has been a year since I started to make money from building software. I don't
 
 When it comes to choosing a framework or a library there is often a lot of discussion. At some point in my evolution as a programmer I thought that flexibility is always good. After a bunch of lines of code I learned that rigidness is not that bad.
 
-Frameworks, libraries, and tools in general are here because we are bad programmers by nature (among other causes). I really appretiate when a tool forces me to make things in a unique specific and very good way, so I can acomplish my goals by following that way.
+Frameworks, libraries, and tools in general are here because we are bad programmers by nature (among other causes). I really appreciate when a tool forces me to make things in a unique specific and very good way, so I can acomplish my goals by following that way.
 
 In a smooth scenario, when definitions and requirements don't change abruptly during a week I always choose rigidness. I always choose the straight path.
 
