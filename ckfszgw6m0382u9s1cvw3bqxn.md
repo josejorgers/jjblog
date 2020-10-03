@@ -33,7 +33,7 @@ So we start doing the comparison represented in the root, if the answer is "yes"
 
 Then the length of the path from the root to one of the leaves is the amount of comparisons that we need to do to sort an specific input permutation. So, the longest possible path represents the worst case since by following it we need to do the bigger amount of comparisons. Let's demonstrate that the longest path will always contain at least ```O(n * log n)``` comparisons.
 
-We know the number of diferent permutations is ```n!``` so that's the same number of different leaves in the tree. But if the longest path in the tree has length ```h``` then the number of leaves cannot exceed ```2^h``` (```2``` to the power of ```h```). Then we can apply some math like it's shown in the image.
+We know the number of different permutations is ```n!``` so that's the same number of different leaves in the tree. But if the longest path in the tree has length ```h``` then the number of leaves cannot exceed ```2^h``` (```2``` to the power of ```h```). Then we can apply some math like it's shown in the image.
 
 
 ![Screenshot - sortLB.pdf - Google Chrome (2).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1601676651508/9Y9PdCOtv.png)
@@ -54,7 +54,7 @@ The trick here is that ```D``` can always change its mind about the input as lon
 
 Let's consider the problem of finding the maximum in a list of length ```n```. The algorithm ```A``` is allowed to ask whether the number at a certain position in the list is grater than the current maximum, assuming that the initial maximum is the number at a certain fixed position in the list. Let's prove that ```D``` can force ```A``` to make at least ```n-1``` operations.
 
-The strategy of ```D``` would be place in every position ```A``` ask about, a bigger number every time. And the answer will always be "NO" (i.e the number your asking about is not greater than the current maximum). So, after ```n-1``` operations ```A``` can state that the maximum is the number in the position it has not asked about.
+The strategy of ```D``` would be place in every position ```A``` asks about, a bigger number every time. And the answer will always be "NO" (i.e the number your asking about is not greater than the current maximum). So, after ```n-1``` operations ```A``` can state that the maximum is the number in the position it has not asked about.
 
 Let's consider the problem for a list of length ```4```. The initial maximum will be the number in the first position. Then ```A``` asks to ```D``` whether the second number is greater than the current maximum. ```D``` answers "NO" and puts the number ```1``` in the second position of the list. Then ```A``` asks whether the third number is greater than the current maximum and ```D``` answers "NO" and put the number ```2``` in the third position of the list. Finally ```A``` asks about the fourth position and ```D``` answers again "NO" and put the number ```3``` in that position, but then ```A``` can state that the maximum is the first number since there is no other number greater than it, then ```D``` put a ```4``` in the first position and shows the input to ```A```. That input (```4, 1, 2, 3```) is consistent with all the answers ```D``` gave to ```A``` so we found a case where ```A``` is forced to make ```3``` operations to find the maximum in a list of ```4``` elements.
 
