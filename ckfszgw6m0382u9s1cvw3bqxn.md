@@ -1,6 +1,6 @@
 ## Algorithms: when I can tell they're good enough?
 
-There are lot of people designing  algorithms to solve very hard problems efficiently. When we say _efficiently_ we mean spending as few resources as possible, and with resources we mean time and memory (mainly). But how do we know whether some algorithm is the best? How to know whether certain algorithm cannot be improved any further? In this post I am going to talk about how to prove an algorithm is as good as it can.
+There are lot of people designing  algorithms to solve very hard problems efficiently. When we say _efficiently_ we mean spending as few resources as possible, and with resources we mean time and memory (mainly). But how do we know whether some algorithm is the best one? How to know whether certain algorithm cannot be improved any further? In this post I am going to talk about how to prove an algorithm is as good as it can.
 
 ## Requirements and some notes
 
