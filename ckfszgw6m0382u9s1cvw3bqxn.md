@@ -22,7 +22,7 @@ I'll just ilustrate one of those demonstrations. Let's demonstrate that it's not
 
 A permutation of a set of elements is an arrangement of those elements. For a set of size ```n``` there are ```n!``` different arrangements (```n*(n-1)*...*2*1```). So the task is, given a permutation, how to find the sorted permutation using just comparisons? When I say using just comparisons I mean that the only way to gain some knowledge about the input permutation is by comparing two elements of that permutation.
 
-We'll represent such comparison-based algorithm as a binary tree, where the leaves are the different permutaions and every interior node represents a comparison between two specific elements of the input. Here's an example of a tree for an input of length 3.
+We'll represent such comparison-based algorithm as a binary tree, where the leaves are the different permutations and every interior node represents a comparison between two specific elements of the input. Here's an example of a tree for an input of length 3.
 
 
 ![Screenshot - sortLB.pdf - Google Chrome.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1601675600727/cs8HkEMb_.png)
