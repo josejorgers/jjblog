@@ -1,12 +1,12 @@
-## Algorithms: when I can tell they're good enough?
+## Algorithms: when can I tell they're good enough?
 
-There are lot of people designing  algorithms to solve very hard problems efficiently. When we say _efficiently_ we mean spending as few resources as possible, and with resources we mean time and memory (mainly). But how do we know whether some algorithm is the best one? How to know whether certain algorithm cannot be improved any further? In this post I am going to talk about how to prove an algorithm is as good as it can.
+There are lot of people designing  algorithms to solve very hard problems efficiently. When we say _efficiently_ we mean spending as few resources as possible, and with resources we mean time and memory (mainly). But how do we know whether some algorithm is the best one? How to know whether certain algorithm cannot be improved any further? In this post I am going to talk about how to prove an algorithm is as good as can be.
 
 ## Requirements and some notes
 
 I assume you have some knowledge about big-O notation and algorithm design.
 
-In this post I focus on *time complexity*, so I am going to give you some methods to demonstrate an algorithm is "as fast as it can". Some of that ideas are also applicable to memory complexity analysis.
+In this post I focus on *time complexity*, so I am going to give you some methods to demonstrate an algorithm is "as fast as  can be". Some of that ideas are also applicable to memory complexity analysis.
 
 When I say that an algorithm ```A``` such that ```T(A) = O(f(x))``` (i.e runtime complexity function of algorithm ```A``` is ```O(f(x))```) cannot be improved any further, I mean that there is no an equivalent algorithm ```B``` such that ```T(B) = O(g(x))``` and ```T(A) != O(g(x))``` (i.e runtime complexity function of algorithm ```A``` is worse than ```O(g(x))```).
 
