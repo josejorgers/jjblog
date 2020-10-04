@@ -42,7 +42,7 @@ And that ```n/2 * log(n/2)``` is ```O(n*log n)```.
 
 So here we represented the algorithm operations through an abstraction (a binary tree) and based on that we demonstrated that there is always a case in wich the algorithm has to make certain amount of operations (```O(n * log n)```), thus we'll never get an equivalent algorithm that can do less than that certain amount of operations.
 
->Does that mean that we can't sort in less than ```O(n * log n)```? No! We assumed that the algorithm just makes comparisons to gain knowledge about the input (like _buble sort_, _quick sort_ and _merge sort_ do). But there are sorting algorithms that assume some prior knowledge about the input and can sort in ```O(n)```! Take a look at [counting sort](https://en.wikipedia.org/wiki/Counting_sort) and [radix sort](https://en.wikipedia.org/wiki/Radix_sort).
+>Does that mean that we can't sort in less than ```O(n * log n)```? No! We assumed that the algorithm just makes comparisons to gain knowledge about the input (like _bubble sort_, _quick sort_ and _merge sort_ do). But there are sorting algorithms that assume some prior knowledge about the input and can sort in ```O(n)```! Take a look at [counting sort](https://en.wikipedia.org/wiki/Counting_sort) and [radix sort](https://en.wikipedia.org/wiki/Radix_sort).
 
 ## The adversary trick
 
