@@ -52,7 +52,7 @@ The trick here is that ```D``` can always change its mind about the input as lon
 
 ### Example
 
-Let's consider the problem of finding the maximum in a list of length ```n```. The algorithm ```A``` is allowed to ask whether the number at a certain position in the list is grater than the current maximum, assuming that the initial maximum is the number at a certain fixed position in the list. Let's prove that ```D``` can force ```A``` to make at least ```n-1``` operations.
+Let's consider the problem of finding the maximum in a list of length ```n```. The algorithm ```A``` is allowed to ask whether the number at a certain position in the list is greater than the current maximum, assuming that the initial maximum is the number at a certain fixed position in the list. Let's prove that ```D``` can force ```A``` to make at least ```n-1``` operations.
 
 The strategy of ```D``` would be place in every position ```A``` asks about, a bigger number every time. And the answer will always be "NO" (i.e the number your asking about is not greater than the current maximum). So, after ```n-1``` operations ```A``` can state that the maximum is the number in the position it has not asked about.
 
