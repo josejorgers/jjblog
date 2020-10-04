@@ -80,7 +80,7 @@ Maybe you have heard about NP-complete problems before, and probably you have be
 
 That's because the way we can prove that a problem is NP-complete is by proving that if we find a polynomial solution for the problem then we can solve another already known NP-complete problem in polynomial time. In other words, to prove a problem is NP-complete we use the reduction "trick" we've seen in the previous section.
 
-Note that in this case we are not proving that a better runtime is not possible, we are just proving that the humanity haven't found a polynomial solution for that problem so far.
+Note that in this case we are not proving that a better runtime is not possible, we are just proving that the humanity hasn't found a polynomial solution for that problem so far.
 
 Maybe you are wondering how the first NP-complete problem was discovered. Well, I can tell you when: 1971. I also can tell you who: Stephen Cook. I even can tell you what: the 3-SAT problem. But the how is up to you.
 
