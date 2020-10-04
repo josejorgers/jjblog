@@ -60,7 +60,7 @@ Let's consider the problem for a list of length ```4```. The initial maximum wil
 
 The demonstration for a list of ```n``` elements is just a generalization of the method described above.
 
->This was a simple example. You can try to prove the lower bound of sorting algorithms described in the previous section via Adversary Technique for a more chalenging demonstration.
+>This was a simple example. You can try to prove the lower bound of sorting algorithms described in the previous section via Adversary Technique for a more challenging demonstration.
 
 ## Problem reduction
 
