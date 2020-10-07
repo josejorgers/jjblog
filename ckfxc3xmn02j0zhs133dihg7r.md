@@ -10,13 +10,13 @@ As a rule of thumb, if someone can read your slides and get all the info, then y
 
 Your info must be split among the slides and the discourse. If one of them is missing so it is part of the info.
 
-That's because your slides need to deliver information in a way that make your discourse lighter and easier to understand for the audience (that don't care about you).
+That's because your slides need to deliver information in a way that make your discourse lighter and easier to understand for the audience (that doesn't care about you).
 
 ## 2: Always add a title
 
 No matter what is showed in that specific slide, you need to add a title to it.
 
-If someone in the audience get distracted at some point of your presentation, and try to return and understand your explanation, it would be better that he could see what are you talking about right now. That's the main purpose of the slide title.
+If someone in the audience gets distracted at some point of your presentation, and try to return and understand your explanation, it would be better that he could see what are you talking about right now. That's the main purpose of the slide title.
 
 Hence, you need your titles to be concise, and you need they to tell the audience what are you talking about right now. For example, "Prerequisites", "Problem definition", "State of the art", etc.
 
