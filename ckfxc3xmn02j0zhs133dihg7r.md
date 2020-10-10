@@ -18,11 +18,11 @@ No matter what is showed in that specific slide, you need to add a title to it.
 
 If someone in the audience gets distracted at some point of your presentation, and try to return and understand your explanation, it would be better that he could see what are you talking about right now. That's the main purpose of the slide title.
 
-Hence, you need your titles to be concise, and you need they to tell the audience what are you talking about right now. For example, "Prerequisites", "Problem definition", "State of the art", etc.
+Hence, you need your titles to be concise, and you need they to tell the audience what you are talking about right now. For example, "Prerequisites", "Problem definition", "State of the art", etc.
 
 ## 3:  Minimize text, maximize images and graphs
 
-If you want to explain an algo, do it by using animations and images. If you want to explain a process that has many stages, use illustrations for every stage. Your audience will appreciate that.
+If you want to explain an algorithm, do it by using animations and images. If you want to explain a process that has many stages, use illustrations for every stage. Your audience will appreciate that.
 
 You now what they say: _A picture is worth a thousand words_. People don't want to read, they don't even want to understand you! You need to make your message important and interesting to them. And you definitely want your message to be as easy to digest as possible.
 
