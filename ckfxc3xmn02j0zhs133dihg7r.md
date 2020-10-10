@@ -36,7 +36,7 @@ That doesn't mean you need to move from one slide to another with that frequency
 
 When including text just write up to 7 lines per slide and up to 7 words per line.
 
-Try to not exceed those limits, but you can exceed them by one or two words/lines in some special cases.
+Try not to exceed those limits, but you can exceed them by one or two words/lines in some special cases.
 
 Adding too much text is bad for many reasons. We have stated earlier that people don't want to read, we (as audience) prefer other smoother channels. But another drawback related with adding too much text is explained in the next tip.
 
