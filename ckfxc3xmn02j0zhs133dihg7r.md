@@ -68,7 +68,7 @@ A presentation is not a bunch of slides. A presentation is a conception, a metho
 
 The answer to the question "Have you finished your presentation?" can be "Yes, I just have to finish my slides".
 
-But slides can make the difference between a great and a poor presentation. When used in the right way, they can be a very effective weapon, but they also can make your presentation a total disaster if use them badly.
+But slides can make the difference between a great and a poor presentation. When used in the right way, they can be a very effective weapon, but they also can make your presentation a total disaster if you use them badly.
 
 ## Conclusions
 
