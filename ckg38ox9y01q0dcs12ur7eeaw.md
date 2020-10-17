@@ -10,7 +10,7 @@ This post is _language and tool agnostic_, it means that I won't refer to a spec
 
 I was required to design a framework to perform different E2E tests on different websites. More precisely we needed to make some tests over specific React components inside those websites. Every component has the same classes and id's no matter the website and just changes slightly from one site to another. We needed to make tests for every possible viewport (mobile, tablet, and desktop), and the components change their structure when the viewport changes.
 
-Furthermore, we know nothing about the developers. Thus, I needed to be prepared to manage some unforeseen changes in the interface relatively easily. In other words, one critical requirement the framework needed to fulfill was to be easy to maintain.
+Furthermore, we know nothing about the developers. Thus, I needed to be prepared to manage some unforeseen changes in the interface relatively easy. In other words, one critical requirement the framework needed to fulfill was to be easy to maintain.
 
 How to make an E2E Testing Framework that doesn't care too much whether developers changed the id attribute of some button that is clicked in some test? How to be able to write tests for some component that is not created yet? And, if possible, how to make every test easy to read and understand?
 
@@ -18,7 +18,7 @@ All those goals can be achieved by applying some abstractions and design pattern
 
 ## The Page Object Model
 
-The first thing we need to do is to create an abstraction for a page. This is important for several reasons. It will increase readability. For example, you don't want to have a line in your test that reads ```tool.getByCssSelector("button.btn.btn-submit").click()```, instead you want to have a line like this one: ```page.clickSubmitLoginFormButton()``` or something similar. You also need to keep all the CSS selectors and DOM related stuff in a single place, this way, when something in the interface is changed you only need to modify one single file (or maybe two, but no more ;-) ).
+The first thing we need to do is to create an abstraction for a page. This is important for several reasons. It will increase readability. For example, you don't want to have a line in your test that reads ```tool.getByCssSelector("button.btn.btn-submit").click()```, instead you want to have a line like this one: ```page.clickSubmitLoginFormButton()``` or something similar. You also need to keep all the CSS selectors and DOM related stuff in a single place, this way, when something in the interface is changed you only need to modify one single file (or maybe two, but not more ;-) ).
 
 That abstraction is called the **Page Object Model**. You make a class that represents only the elements that you are interested in from the page. You put all the DOM related stuff in those classes.
 
@@ -171,7 +171,7 @@ Now, in the Conclusions section, we'll check whether we have accomplished our in
 
 ## Conclusions
 
-Building our framework in the way I have shown you in this post, you can dramatically decrease the cost of a change in the user interface. All the code that depends on the user interface is isolated in specific classes that abstract the concept of a page.
+Building our framework in the way I have shown you in this post, can dramatically decrease the cost of a change in the user interface. All the code that depends on the user interface is isolated in specific classes that abstract the concept of a page.
 
 That abstraction also allows us to  write the tests for the next week! I mean the test for components that have not been created yet. We just make the required new PageModels and PageObjects to mock the elements on the page that will be created and we can build the rest of the process in the same way we have seen so far. When we had the specific elements on the interface we can change the page models and verify whether the application behaves as expected.
 
