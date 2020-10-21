@@ -4,7 +4,7 @@ After my first month of writing in my blog, this seems an adequate question. Why
 
 ## I write to myself
 
-I'd love to have tons of people reading my blog and liking my content. The only social media I'm actively using right now is Twitter. I only use it to get in touch with the community of developers and computer scientists out there. I only tweet about those topics and it'd be amazing to have a lot of followers to debate with. Yes, having a strong online presence is amazing, but you already knew that. The thing is, I don't write for you, nor for anyone but me. I really appreciate you writing a comment on any of my posts, and liking them, and following me on Twitter too. Furthermore, I'm very interested in your opinion and feedback and want everyone can enjoy what I'm writing. But I write to myself.
+I'd love to have tons of people reading my blog and liking my content. The only social media I'm actively using right now is Twitter. I only use it to get in touch with the community of developers and computer scientists out there. I only tweet about those topics and it'd be amazing to have a lot of followers to debate with. Yes, having a strong online presence is amazing, but you already knew that. The thing is, I don't write for you, nor anyone but me. I really appreciate you writing a comment on any of my posts, and liking them, and following me on Twitter too. Furthermore, I'm very interested in your opinion and feedback and want everyone can enjoy what I'm writing. But I write to myself.
 
 Writing to myself means I'm not going to write about something I'm not interested in. I know that I could write something about a more popular subject and maybe that way I could get more followers and reactions. That's not my goal, at least right now. I really love to write, it's an amazing learning exercise, I could be helping others which is an amazing feeling, and I'm storing my thoughts for my future self at the same time, which could be an amazing advantage for him. But if I begin to take care of what is popular and what isn't, I'd be losing all the fun.
 
@@ -24,7 +24,7 @@ So it's all about the content. But what I have written so far?
 
 ## The topics I have written about so far
 
-My [first article](https://jj.hashnode.dev/the-test-the-bug-and-the-hacker) was a motivational one. It was about the necessity of testing and the right way to do it. I also wrote about testing [here](https://jj.hashnode.dev/building-an-e2e-test-framework-using-some-good-design-patterns) but making emphasis in some Desing Patterns I have used to build testing frameworks.
+My [first article](https://jj.hashnode.dev/the-test-the-bug-and-the-hacker) was a motivational one. It was about the necessity of testing and the right way to do it. I also wrote about testing [here](https://jj.hashnode.dev/building-an-e2e-test-framework-using-some-good-design-patterns) but making emphasis on some Design Patterns I have used to build testing frameworks.
 
 I wrote about algorithms and problem-solving strategies [here](https://jj.hashnode.dev/combining-good-ideas-to-get-the-best-solution) and [here](https://jj.hashnode.dev/algorithms-when-can-i-tell-theyre-good-enough). Those are two of my favorite topics.
 
