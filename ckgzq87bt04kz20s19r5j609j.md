@@ -255,6 +255,8 @@ In this article, we defined a new data structure that allows us to do insertions
 
 I didn't want to go into the implementation details and proofs of correctness and time complexities because I wanted the article to be accessible for a wider audience. I know some parts of the code can be obscure right now. But I consider that talking about a problem and sharing the ideas to solve it is very helpful for everybody.
 
+You can see a Lisp implementation of the data structure along with some insights  [here](https://github.com/josejorgers/indexed-linked-list) 
+
 If you want me to make a more detailed article with all the formulas and demonstrations just let me know. You can react to this article and leave a comment, or you can follow me or @-me on Twitter to talk about this or any other CS-related topic.
 
 
