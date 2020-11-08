@@ -1,16 +1,18 @@
 ## Building an E2E Test Framework using some good Design Patterns
 
-End to End (E2E) testing is about simulating the user experience. It doesn't deal with functions, variables, classes, or databases, instead, it deals with buttons, clicks, expected messages, links, etc. We can say that E2E testing is the "ultimate" testing since it checks whether the product as a whole behaves as expected.
+End to End (E2E) testing is about simulating the user experience. It doesn't deal with functions, variables, classes, or databases. Instead, it deals with buttons, clicks, expected messages, links, etc. We can say that E2E testing is the "ultimate" testing since it checks whether the product as a whole behaves as expected.
 
-In general, E2E testing is difficult to automatize. First of all, we need tools that can interact with the application that is been tested, we need to fill forms, wait for a page to load completely, and that kind of stuff. We also need to get the results from the user interface, we don't have functions returning objects but HTML elements containing the information. Mocking a real user can be challenging and might require a lot of maintenance. In this post I will talk about my own experience building an E2E Testing Framework, I applied some cool Design Patterns so I think this could be interesting for you even if you have nothing to do with E2E Testing Automation.
+In general, E2E testing is difficult to automatize. First of all, we need tools that can interact with the application that is being tested, we need to fill forms, wait for a page to load completely, and that kind of stuff. We also need to get the results from the user interface, we don't have functions returning objects but HTML elements containing the information. Mocking a real user can be challenging and might require a lot of maintenance.
+
+In this post, I will talk about my own experience building an E2E Testing Framework, I applied some cool Design Patterns so I think this could be interesting for you even if you have nothing to do with E2E Testing Automation.
 
 This post is _language and tool agnostic_, it means that I won't refer to a specific programming language nor a specific E2E tool like Selenium, Puppeteer, or Playwright. By the way, those are great tools for automatizing E2E tests. Furthermore, this post focuses on E2E Testing for websites.
 
 ## The Problem
 
-I was required to design a framework to perform different E2E tests on different websites. More precisely we needed to make some tests over specific React components inside those websites. Every component has the same classes and id's no matter the website and just changes slightly from one site to another. We needed to make tests for every possible viewport (mobile, tablet, and desktop), and the components change their structure when the viewport changes.
+I was required to design a framework to perform different E2E tests on different websites. More precisely, I needed to make some tests over specific React components inside those websites. Every component has the same structure and CSS selectors no matter the website and just changes slightly from one site to another. We needed to make tests for every possible viewport (mobile, tablet, and desktop), and the components change their structure when the viewport changes.
 
-Furthermore, we know nothing about the developers. Thus, I needed to be prepared to manage some unforeseen changes in the interface relatively easy. In other words, one critical requirement the framework needed to fulfill was to be easy to maintain.
+Furthermore, I know nothing about the developers. Thus, I needed to be prepared to manage some unforeseen changes in the interface relatively easy. In other words, one critical requirement the framework needed to fulfill was to be easy to maintain.
 
 How to make an E2E Testing Framework that doesn't care too much whether developers changed the id attribute of some button that is clicked in some test? How to be able to write tests for some component that is not created yet? And, if possible, how to make every test easy to read and understand?
 
@@ -49,7 +51,7 @@ class LoginPageModel
 
 ```
 
-If any of those element changes in the future we only need to modify the corresponding **PageModel** class.
+If any of those elements change in the future we only need to modify the corresponding **PageModel** class.
 
 In the **PageObject** class, I add the actions that you can perform on the page. An example of a **LoginPageObject** class would be:
 
@@ -86,7 +88,7 @@ With the **Page Object** abstraction we can make tests that only depend on page 
 
 ## Tests. The Facade Pattern
 
-Now we have many classes that contain all the elements and actions of several pages. What we need to do now is to build our tests. Those tests will provide a simple interface that exposes to the client the ```run``` functionality that returns a test result. So the client doesn't have to worry about accessing any element or doing any action, just needs to instantiate the test and run it.
+Now we have many classes that contain all the elements and actions of several pages. What we need to do now is to build our tests. Those tests will provide a simple interface that exposes to the client the ```run``` functionality. This functionality returns a test result. The client doesn't have to worry about accessing any element or doing any action, just needs to instantiate the test and run it.
 
 When we provide a simple interface that hides a more complex infrastructure we are applying the Facade Pattern. I know that's only a fancy name for something that is clear we needed to do. Continuing with our Login Page Test example, the **LoginTest** would be something like this:
 
@@ -113,13 +115,13 @@ class LoginTest
 
 The last line of the ```run``` method is an assertion. Depending on the complexity of the assertions you use, you can either define them separately or inside the Page Object. By choosing the first option you can reuse and extend assertions, but if your assertions are very specific for each case and simple enough the first option can be overkill and you probably will be good with the second one.
 
-We are also injecting the Page Object dependency in the Test. We are not doing ```this.pageObject = new LoginPageObject()``` but receiving the dependency as an argument in the constructor. That way we can instantiate the same test for another page. We also inject the Page Model in the Page Object instances, then we can have the same Page Object with another model (eg: same LoginPageObject instance with a LoginMobilePageModel instead of a regular LoginPageModel).
+We are also injecting the Page Object dependency in the Test. We are not doing ```this.pageObject = new LoginPageObject()``` but receiving the dependency as an argument in the constructor. This is called _Dependency Injection_. That way, we can instantiate the same test for another page. We also inject the Page Model in Page Object instances. Then, we can have the same Page Object with another model (eg: same LoginPageObject instance with a LoginMobilePageModel instead of a regular LoginPageModel).
 
-But now, to instantiate a test, we need to instantiate one or more Page Models, then one or more Page Objects, and finally the Test. It seems too hard. That's precisely one of the drawbacks of using Dependency Injection, but it is solvable!
+But now, to instantiate a test, we need to instantiate one or more Page Models, then one or more Page Objects, and finally the Test. It seems too much work. That's precisely one of the drawbacks of using Dependency Injection, but it is solvable!
 
 ## The Factory Pattern
 
-If it's difficult, let's delegate the responsibility to another abstraction. In this case, we'll make some Factories. These are classes that are used to instantiate other classes. In this case, every Factory class will be responsible for instantiating a specific test. That's the Factory Pattern in action!
+If it's difficult, let's delegate the responsibility to another abstraction. In this case, we'll make some Factories. These are classes that are used to instantiate other classes. Every Factory class will be responsible for instantiating a specific test. That's the Factory Pattern in action!
 
 So we can create a **LoginTestFactory** for our LoginTest:
 
