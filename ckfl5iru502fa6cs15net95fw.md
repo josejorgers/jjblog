@@ -120,6 +120,8 @@ That allows us to have a list of length ```sqrt(N)``` such that the distance bet
 
 If you want to see more details about this structure and a Lisp implementation of it, you can do it [here](https://github.com/josejorgers/indexed-linked-list).
 
+> **Update**: I have written a post about this data structure. You can read it [here](https://jj.hashnode.dev/improving-linked-lists)
+
 ## Conclusions
 
 We have seen two examples of combining existing solutions to get another one that has some of the good qualities of each of the previous ones. My purpose was to show you this way of thinking, not just specific examples. 
